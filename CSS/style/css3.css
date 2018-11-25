@@ -1,0 +1,16 @@
+body {
+  font-family: fantasy;
+  color: grey;
+
+padding: 50;
+}
+h1 {
+  margin: 0px;
+
+}
+
+.strona {
+  border: 1px solid black;
+  background-color: rgb(250, 11, 111);
+  padding: inherit;
+}

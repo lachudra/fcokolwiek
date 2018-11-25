@@ -1,0 +1,22 @@
+body{
+  background-color: white;
+}
+*{font-family: Arial, Verdana, sans-serif;
+color: red;}
+
+h1 {
+  color: black;
+}
+b {
+  color: teal;
+}
+p b{
+  color: magenta !important
+  ;
+}
+p#opis {
+  font-size: 77%}
+
+  p {
+    font-size: 50%
+  }

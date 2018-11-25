@@ -1,0 +1,68 @@
+body  { background-image: url(../css/tapeta.jpg);
+color:red;
+
+}
+p{
+color: rgba(196, 44, 199, 0.9);
+}
+
+
+#wzgorza {
+  color : blue ;
+}
+
+h1, h4 {
+  color: rgb(228, 96, 0); font-family: comic sans,cursive,fantasy ;
+}
+
+a:link{
+  color: green;
+}
+a:visited {
+  color: rgb(148, 171, 10);
+
+}
+
+a:hover{
+  color: black;
+  cursor: crosshair;
+  text-decoration: underline
+}
+a:active{
+  color: white;
+  background-color: hotpink;
+}
+a:hover, a:active{
+  color: white;
+}
+
+
+a{
+  text decoration: underline;
+}
+/*
+p-serlektor
+color- wlasciwosci
+red - wartosc
+*/
+
+
+
+/* selector elementu dziecka */
+ul > a:link
+{  color: black;
+}
+
+
+/* selektor elementu potomnego*/
+
+h1 a:link{
+  color: rgb(40, 30, 33);
+}
+
+/*selektor elementu sąsiadującego bezpośrednio*/
+
+h1 + p{
+   color: black;
+}
+h3 + p{text-decoration: underline;}

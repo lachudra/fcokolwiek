@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <title> Formularze</title>
+</head>
+
+<body> 
+
+<form method="get">
+  <input type="text" name="imie" autofocus autocomplete="off"><br>
+ 
+  <input type="number" name="liczba" step="0.10">  <input type="number" name="liczba" step="10" autofocus><br>
+  Daty:<br>
+  <input type="date" name="data">
+  <input type="time" name="czas">
+  <input type="datetime">
+  <input type="datetime-local">
+  <input type="month">
+  Telefon:
+  <input type="tel"><br>
+  
+ Kolor:
+    <input type="color">
+Zakres
+    <input type="range" name="zakres" min="0" max="255">
+   
+  
+Lista:
+  <label>dzien tygodnia</label>
+  <input type="text" list="tydzien">
+  <datalist id="tydzien">
+    <option value="poniedziałek"></option>
+    <option value="wtorek"></option>
+    <option value="środa"></option>
+    <option value="czwartek"></option>
+    <option value="piątek"></option>
+    <option value="sobota"></option>
+    <option value="niedziela"></option>
+  </datalist><br>
+Wyrażenie regularne:
+PESEL:
+  <input type="text" name="pesel" pattern="[0-9]{11}" required><br>
+ Kod pocztowy:
+  <input type="text" name="kod" pattern="^\d{2}-\d{3}" placeholder="00-000"><br>
+  <input type="submit"><br>
+  ADRES IP: 
+<input type="text" name="IP" placeholder= "Adres IP"
+       pattern="^\d{1,3}$">
+  <br>
+Telefon Komórkowy:
+  <input type="text" name="Tel" placeholder= "000-000-000"
+     pattern="^\d{3}.\d{3}.\d{3}">
+   <input type="submit"><br>
+  
+
+  Hasło:<br>
+  <!-- minimum 8 znaków, 1 duża litera, 1 mała litera, cyfra-->
+   <input type="password" name="pass"  
+     pattern="(?=x*[A-Z])(?=x*[a-z])(?=x*\d).{8.}" placeholder="januss11">
+  <input type="submit" formtarget="_blank" formnovalidate formmethod="post">
+  
+
+  </form>
+  <hr>
+
+<h4>Nowy Formularz</h4>
+
+  <form oninput="wynik.value=parseInt(liczba1.value)+parseInt(liczba2.value)">
+    <input type="number" id="liczba1">+
+    <input type="number" id="liczba2">=
+    <output name="wynik" for="liczba1 liczba2"></output>
+  </form>
+  </body>
+  
+  
+  
+  
+
+
+<!---->
+
+
+</html>
